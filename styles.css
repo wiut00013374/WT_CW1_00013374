@@ -1,0 +1,330 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.head {
+    position: relative;
+    min-height: 95vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(5, 8, 29, 0.7), rgba(5, 8, 29, 0.7)), url(images/banner_main.png);
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    padding: 3% 7%;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+nav img{
+    height: auto;
+    width: 140px;
+    
+}
+
+.nav_links {
+    text-align: right;
+    flex: 1;
+    
+}
+
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 12px;
+    
+    
+}
+
+.nav_links ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    text-decoration: none;
+    
+
+}
+
+.nav_links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    transition: 0.5s;
+    background: hsl(4, 72%, 55%);
+    margin: auto;
+    display: block;
+}
+
+.nav_links ul li:hover::after{
+    width: 100%;
+    
+}
+
+.text_box {
+    width: 89%;
+    color:rgb(255, 255, 255);
+    top: 49%;
+    transform: translate(-49%, -49%);
+    left: 51%;
+    position: absolute;
+    text-align: center;
+    
+}
+
+.text_box h1{
+    font-size: 64px;
+
+}
+
+.text_box p{
+    margin: 12px 0 38px;
+    font-size: 15px;
+    color:rgb(255, 255, 255);
+     
+}
+
+.visit_btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    padding: 12px 34px;
+    font-size: 13px;
+    
+}
+
+.visit_btn:hover {
+    background: hsl(4, 72%, 55%);
+    border: 1px solid hsl(4, 72%, 55%);
+    transition: 1s;
+
+
+}
+
+nav .fa{
+    display: none;
+}
+
+
+
+
+    
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+    
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+p{
+    color: hsl(0, 0%, 47%);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 12px;
+
+}
+
+.row{
+    justify-content: space-between;
+    margin-top: 5%;
+    display: flex;
+    
+    
+}
+.courses{
+    flex-basis: 31%;
+    background: rgb(223, 219, 219);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+.courses:hover{
+    box-shadow: 0 0 18px 0px #00000033;
+}
+
+
+    /*----- info about branches ------*/
+
+.branch{
+        width: 85%;
+        margin: auto;
+        text-align: center;
+        padding-top: 55px;
+
+}
+.branches{
+    flex-basis: 32%;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 35px;
+    
+
+}
+.branches img{
+    display: block;
+    width: 100%;
+}
+
+
+/* key advantages*/
+
+.adv{
+    width: 80%;
+    text-align: center;
+    padding-top: 110px;
+    margin: auto;
+    
+
+}
+.main_adv{
+    flex-basis: 31%;
+    margin-bottom: 5%;
+    text-align: left;
+    border-radius: 10px;
+    
+}
+.main_adv img{
+    width: 100%;
+    border-radius: 12px;
+
+}
+.main_adv p{
+    padding: 0;
+}
+.main_adv h3{
+    margin-bottom: 16px;
+    text-align: left;
+    margin-top: 15px;
+    
+}
+
+/* revues*/
+
+
+
+.revue{
+    width: 85%;
+    padding-top: 110px;
+    text-align: center;
+    margin: auto;
+}
+.revues {
+    flex-basis: 44%;
+    margin-bottom: 6%;
+    text-align: left;
+    border-radius: 11px;
+    background: rgb(223, 219, 219);
+    cursor: wait;
+    display: flex;
+    padding: 23px;
+    
+
+}
+.revues img{
+    height: 42px;
+    margin-left: 6px;
+    margin-right: 32px;
+    border-radius: 48%;
+}
+.revues p{
+    padding: 0;
+
+}
+.revues h3{
+    text-align: left;
+    margin-top: 16px;
+      
+}
+.revues .fa{
+    color: hsl(4, 72%, 55%);
+    
+}
+
+
+/* contact us*/
+
+.contact_us{
+    margin: 110px auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/contact.png);
+    background-position: center;
+    width: 85%;
+    background-size: cover;
+    text-align: center;
+    padding: 110px 0;
+    border-radius: 12px; 
+}
+.contact_us h1{
+    color:rgb(255, 255, 255)
+}
+#last-btn {
+    display: inline-block;
+    color:rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 13px 35px;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+}
+
+#last-btn:hover {
+    background: hsl(4, 72%, 55%);
+    border: 1px solid hsl(4, 72%, 55%);
+    transition: 1s;
+
+}
+
+
+/* --- footer ---*/
+
+footer {
+    width: 85%;
+    padding: 32px 0;
+    align-items: center;
+    text-align: center;
+
+
+}
+footer h4{
+    margin-bottom: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
